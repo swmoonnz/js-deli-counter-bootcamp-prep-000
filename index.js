@@ -14,11 +14,11 @@ if (katzDeli.length === 0)
   }
 }
 
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length === 0)
+function currentLine(line) {
+  if (line.length === 0)
   {return `The line is currently empty.`}  
   else for(let i = 0; i < line.length; i++) {
-     katzDeli.push(` `+[i+1]+`. `  + katzDeliLine[i])
+     katzDeli.push(` `+[i+1]+`. `  + line[i])
    }
    return(`The line is currently:` + katzDeli)
 }
